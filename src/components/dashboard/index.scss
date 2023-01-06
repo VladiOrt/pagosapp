@@ -1,0 +1,85 @@
+/*
+PALETA DE COLORES 
+#F7F5E6
+#333A56
+#52658F
+#E8E8E8
+*/
+.containerDashBoard{
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    .containerMenu{
+        min-width: 15vw;
+        max-width: 15vw;
+        min-height: 100vh;
+        background-color: #333A56;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        ul{
+            min-width: 80%;
+            margin-top: 10vh;
+            list-style: none;
+            li{
+                min-width: 100%;
+                border: 1px solid #FFF;
+                min-height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #F7F5E6;
+                color: #333A56;
+                font-size: 20px;
+                font-weight: 600;
+                border-radius: 5px;
+                margin-top: 10px;
+                transition-duration: 0.5s;
+            }
+            li:hover{
+                font-size: 25px;
+            }
+        }
+    }
+    .containerPageOne{
+        min-width: 85vw;
+        max-width: 85vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333A56;
+        
+        .containerPageOneContent{
+            display: flex;
+            min-width: 84vw;
+            max-width: 84vw;
+            min-height: 98vh;
+            max-height: 100vh;
+            background-color: #FFF;
+            overflow-x: auto;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            .containerPageOneContentHeader{                
+                min-height: 6vh;
+                min-width: 84vw;
+                max-width: 84vw;
+            }
+            .containerPageOneContentView{
+                min-height: 85vh;
+                max-height: 85vh;
+                min-width: 84vw;
+                max-width: 84vw;
+                
+            }
+        }
+    }
+    
+    
+}
+
