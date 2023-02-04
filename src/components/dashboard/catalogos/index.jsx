@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './index.scss'
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 
 const columns: GridColDef[] = [
@@ -35,25 +34,16 @@ const rows = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-export default function Usuarios() {
+export default function Catalogos() {
   return (
-      <div className="containerUsuariosVista">
-          <div className="headerVistaUsuarios">
-              <div className="titulo">Usuarios</div>
-          </div>
-          <div className="containerTable">
-            <div style={{ height: 400, width: '100%' }}>
-                <DataGrid
-                    rows={rows}
-                    columns={columns}
-                    pageSize={5}
-                    rowsPerPageOptions={[5]}
-                    checkboxSelection
-                />
-            </div>
-          </div>
-       
-      </div>
-   
+    <div style={{ height: 400, width: '100%' }}>
+      <DataGrid
+        rows={rows}
+        columns={columns}
+        pageSize={5}
+        rowsPerPageOptions={[5]}
+        checkboxSelection
+      />
+    </div>
   );
 }
